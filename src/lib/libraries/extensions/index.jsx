@@ -117,14 +117,14 @@ export default [
         helpLink: 'https://scratch.mit.edu/microbit'
     },
     {
-        name: 'Ara Light Connector',
-        extensionId: 'ara_connector',
+        name: 'araConnector',
+        extensionId:'araConnector',
         iconURL: microbitImage,
         description: (
             <FormattedMessage
                 defaultMessage="Connect your projects with the world."
                 description="Description for the 'micro:bit' extension"
-                id="gui.microbit.description"
+                id="gui.araConnector.description"
             />
         ),
         featured: true,
@@ -136,7 +136,7 @@ export default [
             <FormattedMessage
                 defaultMessage="Connecting"
                 description="Message to help people connect to their micro:bit."
-                id="gui.extension.microbit.connectingMessage"
+                id="gui.extension.araConnector.connectingMessage"
             />
         ),
         helpLink: 'https://scratch.mit.edu/microbit'

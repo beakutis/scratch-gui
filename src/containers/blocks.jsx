@@ -336,6 +336,7 @@ class Blocks extends React.Component {
     }
     handleCategorySelected (categoryId) {
         const extension = extensionData.find(ext => ext.extensionId === categoryId);
+        console.log("ok now the id is " + extension.Id)
         if (extension && extension.launchDeviceConnectionFlow) {
             this.handleConnectionModalStart(categoryId);
         }
@@ -361,6 +362,7 @@ class Blocks extends React.Component {
     }
     handleConnectionModalStart (extensionId) {
         const extension = extensionData.find(ext => ext.extensionId === extensionId);
+        console.log("the ID is " + extension.Id);
         if (extension) {
             this.setState({connectionModal: {
                 extensionId: extensionId,
