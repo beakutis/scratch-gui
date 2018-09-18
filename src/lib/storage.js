@@ -15,17 +15,17 @@ class Storage extends ScratchStorage {
             asset.data,
             asset.id
         ));
-        this.addWebStore(
+        this.addWebSource(
             [this.AssetType.Project],
             this.getProjectGetConfig.bind(this),
             this.getProjectCreateConfig.bind(this),
             this.getProjectUpdateConfig.bind(this)
         );
-        this.addWebStore(
+        this.addWebSource(
             [this.AssetType.ImageVector, this.AssetType.ImageBitmap, this.AssetType.Sound],
             this.getAssetGetConfig.bind(this)
         );
-        this.addWebStore(
+        this.addWebSource(
             [this.AssetType.Sound],
             asset => `static/extension-assets/scratch3_music/${asset.assetId}.${asset.dataFormat}`
         );

@@ -133,7 +133,7 @@ export default [
         ),
         featured: true,
         disabled: false,
-        launchDeviceConnectionFlow: true,
+        launchPeripheralConnectionFlow: true,
         useAutoScan: false,
         peripheralImage: microbitPeripheralImage,
         smallPeripheralImage: microbitMenuImage,
