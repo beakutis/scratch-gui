@@ -9,18 +9,8 @@ import defaultProject from './default-project';
 class Storage extends ScratchStorage {
     constructor () {
         super();
-<<<<<<< HEAD
-        defaultProjectAssets.forEach(asset => this.cache(
-            this.AssetType[asset.assetType],
-            this.DataFormat[asset.dataFormat],
-            asset.data,
-            asset.id
-        ));
-        this.addWebSource(
-=======
         this.cacheDefaultProject();
         this.addWebStore(
->>>>>>> develop
             [this.AssetType.Project],
             this.getProjectGetConfig.bind(this),
             this.getProjectCreateConfig.bind(this),
