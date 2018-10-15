@@ -6,6 +6,7 @@ import penImage from './pen.png';
 import videoImage from './video-sensing.png';
 import translateImage from './translate.png';
 import microbitImage from './microbit.png';
+import araImage from './ara.png';
 import ev3Image from './ev3.png';
 import wedoImage from './wedo.png';
 
@@ -16,6 +17,8 @@ import ev3MenuImage from './peripheral-connection/ev3/ev3-small.svg';
 import wedoPeripheralImage from './peripheral-connection/wedo/wedo-illustration.svg';
 import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
+import araMenuImage from './peripheral-connection/ara/ara-small.svg';
+import araPeripheralImage from './peripheral-connection/ara/ara-illustration.svg';
 
 export default [
     {
@@ -121,13 +124,13 @@ export default [
         helpLink: 'https://scratch.mit.edu/microbit'
     },
     {
-        name: 'araConnector',
+        name: 'target',
         extensionId:'araConnector',
-        iconURL: microbitImage,
+        iconURL: araImage,
         description: (
             <FormattedMessage
-                defaultMessage="Connect your projects with the world."
-                description="Description for the 'micro:bit' extension"
+                defaultMessage="Connect and interact with your Ara lights."
+                description="Description for the 'ara' extension"
                 id="gui.araConnector.description"
             />
         ),
@@ -135,12 +138,12 @@ export default [
         disabled: false,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        peripheralImage: microbitPeripheralImage,
-        smallPeripheralImage: microbitMenuImage,
+        peripheralImage: araPeripheralImage,
+        smallPeripheralImage: araMenuImage,
         connectingMessage: (
             <FormattedMessage
                 defaultMessage="Connecting"
-                description="Message to help people connect to their micro:bit."
+                description="Message to help people connect to their ara lights."
                 id="gui.extension.araConnector.connectingMessage"
             />
         ),
