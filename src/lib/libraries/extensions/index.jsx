@@ -124,12 +124,12 @@ export default [
         helpLink: 'https://scratch.mit.edu/microbit'
     },
     {
-        name: 'target',
+        name: 'Target Connected',
         extensionId:'araConnector',
         iconURL: araImage,
         description: (
             <FormattedMessage
-                defaultMessage="Connect and interact with your Ara lights."
+                defaultMessage="Interact with your connected lighting."
                 description="Description for the 'ara' extension"
                 id="gui.araConnector.description"
             />
